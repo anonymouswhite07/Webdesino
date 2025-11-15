@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 220 90% 10%;
+    --secondary: 220 90% 5%;
+    --indigo: #5252f2;
+    --storm: #1d1d42;
+    --midnight: #161625;
+    --lavender: #8578ff;
+    --royal: #25257d;
+    --neutral-900: #0a0a0a;
+    --neutral-800: #262626;
+    --neutral-700: #404040;
+    --neutral-400: #a3a3a3;
+    --neutral-300: #d4d4d4;
+    --neutral-200: #e5e5e5;
+    --neutral-100: #f5f5f5;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--secondary)));
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .section-spacing {
+    padding: 6rem 0;
+  }
+
+  .c-space {
+    @apply px-4 md:px-10 lg:px-20;
+  }
+
+  .headtext {
+    @apply text-3xl font-bold;
+  }
+
+  .subtext {
+    @apply mt-3 text-neutral-400;
+  }
+
+  .text-heading {
+    @apply text-4xl font-bold text-white;
+  }
+
+  .field-input {
+    @apply w-full p-3 mt-2 bg-transparent border rounded-md outline-none border-neutral-700 focus:border-indigo;
+  }
+
+  .field-input-focus {
+    @apply field-input focus:ring-1 focus:ring-indigo;
+  }
+
+  .feild-label {
+    @apply text-lg font-medium;
+  }
+
+  .nav-ul {
+    @apply flex flex-col gap-4 mt-8 mb-12 md:flex-row md:items-center md:gap-6 md:mt-0 md:mb-0;
+  }
+
+  .nav-li {
+    @apply hover:text-white text-neutral-400 transition-colors;
+  }
+
+  .nav-link {
+    @apply text-lg md:text-base;
+  }
+
+  .grid-default-color {
+    @apply bg-gradient-to-br from-indigo/20 to-storm;
+  }
+
+  .grid-black-color {
+    @apply bg-gradient-to-br from-storm to-midnight;
+  }
+
+  .grid-special-color {
+    @apply bg-gradient-to-br from-royal/30 to-indigo/10;
+  }
+
+  .grid-1 {
+    @apply md:col-span-2 md:row-span-2 rounded-3xl;
+  }
+
+  .grid-2 {
+    @apply md:col-span-4 rounded-3xl;
+  }
+
+  .grid-3 {
+    @apply md:col-span-3 rounded-3xl;
+  }
+
+  .grid-4 {
+    @apply md:col-span-3 rounded-3xl;
+  }
+
+  .grid-5 {
+    @apply md:col-span-6 rounded-3xl;
+  }
+
+  .bg-radial {
+    @apply bg-gradient-to-r from-lavender to-royal;
+  }
+
+  .hover-animation {
+    @apply transition-all duration-300 hover:from-indigo hover:to-lavender;
+  }
+
+  .animate-marquee {
+    animation: marquee var(--duration, 30s) linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse var(--duration, 30s) linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee-reverse {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
