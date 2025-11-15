@@ -17,9 +17,7 @@ const Clients = () => {
   const certifications = [
     { name: "Google", icon: "/assets/logos/google.svg" },
     { name: "Microsoft", icon: "/assets/logos/microsoft.svg" },
-    { name: "IBM", icon: "/assets/logos/ibm.svg" },
-    { name: "WordPress", icon: "/assets/logos/wordpress.svg" },
-    { name: "Shopify", icon: "/assets/logos/shopify.svg" }
+    { name: "IBM", icon: "/assets/logos/ibm.svg" }
   ];
 
   return (

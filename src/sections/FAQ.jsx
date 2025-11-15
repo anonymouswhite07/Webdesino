@@ -71,7 +71,7 @@ const FAQ = () => {
             transition={{ duration: 0.3, delay: index * 0.05 }}
           >
             <button
-              className="flex justify-between items-center w-full p-6 text-left bg-primary/20 hover:bg-primary/30 transition-colors"
+              className="flex justify-between items-center w-full p-6 text-left bg-primary/20 hover:bg-primary/30 transition-colors font-medium"
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-medium text-neutral-200">
@@ -89,7 +89,7 @@ const FAQ = () => {
                 transition={{ duration: 0.3 }}
                 className="bg-primary/10"
               >
-                <div className="p-6 text-neutral-400">
+                <div className="p-6 text-neutral-400 font-medium">
                   {faq.answer}
                 </div>
               </motion.div>

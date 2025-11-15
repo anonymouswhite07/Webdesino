@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { Globe } from "../components/globe";
 
 const Stats = () => {
   const stats = [
@@ -80,12 +79,6 @@ const Stats = () => {
               <div className="text-neutral-300">Final Result</div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="mt-16 flex justify-center">
-        <div className="w-48 h-48">
-          <Globe />
         </div>
       </div>
     </section>

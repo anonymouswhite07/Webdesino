@@ -1,8 +1,9 @@
-import { useRef } from "react";
-import Card from "../components/Card";
-import { Globe } from "../components/globe";
-import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/FrameWorks";
+import { useState, useRef } from "react";
+import { motion } from "motion/react";
+import { Card } from "../components/Card";
+import { Frameworks } from "../components/Frameworks";
+import { CopyEmailButton } from "../components/CopyEmailButton";
+import { gridItems } from "../constants";
 
 const About = () => {
   const grid2Container = useRef();
@@ -79,9 +80,6 @@ const About = () => {
               As a top web development company in Delhi, we combine digital marketing and web solutions to boost brand visibility, engage customers, and increase conversions, helping you stay ahead in a competitive market
             </p>
           </div>
-          <figure className="absolute left-[30%] top-[10%]">
-            <Globe />
-          </figure>
         </div>
         {/* Grid 4 */}
         <div className="grid-special-color grid-4">
