@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
+@reference "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -61,11 +62,11 @@
   }
 
   .field-input {
-    @apply w-full p-3 mt-2 bg-transparent border rounded-md outline-none border-neutral-700 focus:border-indigo;
+    @apply w-full p-3 mt-2 bg-transparent border rounded-md outline-none border-neutral-700 focus:border-[#5252f2];
   }
 
   .field-input-focus {
-    @apply field-input focus:ring-1 focus:ring-indigo;
+    @apply field-input focus:ring-1 focus:ring-[#5252f2];
   }
 
   .feild-label {
@@ -85,7 +86,7 @@
   }
 
   .grid-default-color {
-    @apply bg-gradient-to-br from-indigo/20 to-storm;
+    @apply bg-gradient-to-br from-[#5252f2]/20 to-storm;
   }
 
   .grid-black-color {
@@ -93,7 +94,7 @@
   }
 
   .grid-special-color {
-    @apply bg-gradient-to-br from-royal/30 to-indigo/10;
+    @apply bg-gradient-to-br from-royal/30 to-[#5252f2]/10;
   }
 
   .grid-1 {
@@ -117,11 +118,11 @@
   }
 
   .bg-radial {
-    @apply bg-gradient-to-r from-lavender to-royal;
+    @apply bg-gradient-to-r from-lavender to-[#5252f2];
   }
 
   .hover-animation {
-    @apply transition-all duration-300 hover:from-indigo hover:to-lavender;
+    @apply transition-all duration-300 hover:from-[#5252f2] hover:to-lavender;
   }
 
   .animate-marquee {
