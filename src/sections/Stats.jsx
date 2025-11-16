@@ -53,15 +53,27 @@ const Stats = () => {
           </ul>
         </div>
 
-        <div className="bg-gradient-to-r from-primary/30 to-secondary/30 p-8 rounded-2xl border border-white/10 text-center">
-          <h3 className="text-2xl font-bold mb-4">OPTIMIZE YOUR MARKETING</h3>
-          <p className="text-xl text-neutral-300 mb-6">
-            Take Control of Your Business Processes With our SaaS
-          </p>
-          <p className="text-neutral-400 mb-8">
-            Streamline your business operations with our tailored SaaS solutions. Our platforms offer seamless integration and user-friendly interfaces, allowing you to manage tasks and optimize workflows efficiently.
-          </p>
-          <div className="flex justify-center space-x-8">
+        <div className="bg-gradient-to-r from-primary/30 to-secondary/30 p-8 rounded-2xl border border-white/10">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
+              <img 
+                src="/assets/Digital Marketings.png" 
+                alt="Digital Marketing" 
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="md:w-1/2 md:pl-6">
+              <h3 className="text-2xl font-bold mb-4">OPTIMIZE YOUR MARKETING</h3>
+              <p className="text-xl text-neutral-300 mb-4">
+                Take Control of Your Business Processes With our SaaS
+              </p>
+              <p className="text-neutral-400">
+                Streamline your business operations with our tailored SaaS solutions. Our platforms offer seamless integration and user-friendly interfaces, allowing you to manage tasks and optimize workflows efficiently.
+              </p>
+            </div>
+          </div>
+          
+          <div className="flex justify-center space-x-8 mt-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-blue-400">01</div>
               <div className="text-neutral-300">Signup</div>

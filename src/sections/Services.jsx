@@ -54,6 +54,27 @@ const Services = () => {
           At our web design and development company in Delhi, we focus on attracting new customers through responsive, user-friendly websites tailored to your audience. Our digital marketing strategies—SEO, social media, and targeted ads—drive traffic and convert visitors into loyal customers.
         </p>
       </div>
+
+      <div className="mt-16 bg-gradient-to-r from-primary/30 to-secondary/30 p-8 rounded-2xl border border-white/10">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
+            <img 
+              src="/assets/OPTIMIZE YOUR MARKETING.png" 
+              alt="Optimize Your Marketing" 
+              className="rounded-lg shadow-lg max-w-full h-auto"
+            />
+          </div>
+          <div className="md:w-1/2 md:pl-8">
+            <h3 className="text-3xl font-bold mb-4">OPTIMIZE YOUR MARKETING</h3>
+            <p className="text-xl text-neutral-300">
+              Maximize your business potential with our data-driven marketing strategies. We help you reach the right audience at the right time with compelling campaigns that deliver measurable results.
+            </p>
+            <p className="text-neutral-400 mt-4">
+              Our team of experts combines creativity with analytics to create marketing solutions that drive engagement, increase conversions, and grow your bottom line.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
